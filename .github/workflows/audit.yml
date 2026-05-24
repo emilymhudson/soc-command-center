@@ -1,0 +1,28 @@
+name: Security Posture Audit
+on:
+  schedule:
+    - cron: '0 9 * * 1' # Runs every Monday at 9 AM
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install PyGithub
+      - name: Run Orchestrator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python orchestrator.py
+      - name: Commit Dashboard
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add Security_Posture_Report.md
+          git commit -m "Update Security Posture Report"
+          git push
