@@ -14,7 +14,7 @@ def run_audit():
     repos_to_audit = [
         "probabilistic-threat-classifier",
         "mime-forensic-log-parser",
-        "detection-as-code-hub",
+        "detection-as-code",
         "academic-ctf-architecture",
         "evidentiary-provenance-engine"
     ]
