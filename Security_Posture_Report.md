@@ -1,14 +1,14 @@
 # SOC Command Center: Security Posture Dashboard
 
-Generated: Mon Aug 17 09:28:11 UTC 2026
+Generated: Mon Aug 24 09:34:20 UTC 2026
 
 
 | Repository | Status | Health Score |
 |---|---|---|
-| probabilistic-threat-classifier | Operational | 20/20 |
-| mime-forensic-log-parser | Operational | 20/20 |
-| detection-as-code | Operational | 20/20 |
-| academic-ctf-architecture | Operational | 20/20 |
-| evidentiary-provenance-engine | Operational | 20/20 |
+| probabilistic-threat-classifier | NOT FOUND | 0/20 |
+| mime-forensic-log-parser | NOT FOUND | 0/20 |
+| detection-as-code | NOT FOUND | 0/20 |
+| academic-ctf-architecture | NOT FOUND | 0/20 |
+| evidentiary-provenance-engine | NOT FOUND | 0/20 |
 
-## Aggregate Security Posture: 100/100
+## Aggregate Security Posture: 0/100
